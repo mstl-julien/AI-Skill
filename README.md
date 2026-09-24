@@ -17,6 +17,13 @@ AI Agent 能力模块（Skill）集合仓库。
 
 > 每个 Skill 目录相互独立、自包含。首次使用前请按各自 `SKILL.md` 的「环境准备」运行 `node scripts/check-env.js` 自动装依赖（playwright 等，`node_modules` 已按仓库 `.gitignore` 忽略，不入库）。
 
+## 打包下载（.zip）
+
+仓库根目录提供两个 Skill 的整包压缩文件，可直接下载到本地解压使用（自带 `node_modules`，开箱即用）：
+
+- `douyin-benchmark-analysis.zip`
+- `douyin-topic-stats.zip`
+
 ## 目录结构
 
 ```
