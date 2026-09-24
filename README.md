@@ -14,6 +14,7 @@ AI Agent 能力模块（Skill）集合仓库。
 |------|-------|------|
 | `douyin-benchmark-analysis/` | 抖音对标账号采集与对标分析 | 采集对标账号公开展示信息 + 六节对标报告 + 可迁移选题清单（含评论区洞察） |
 | `douyin-topic-stats/` | 抖音选题清单与数据统计 | 快速盘点账号最近 N 条视频选题 + 四项互动数据，产出可排序 HTML（不采评论） |
+| `douyin-video-analysis/` | 抖音单视频全方位逆向分析 | 输入一条视频 URL，登录采集→10FPS 抽帧→语音/字幕/OCR→全量评论→机制分析，输出单文件 HTML 报告 |
 
 > 每个 Skill 目录相互独立、自包含。首次使用前请按各自 `SKILL.md` 的「环境准备」运行 `node scripts/check-env.js` 自动装依赖（playwright 等，`node_modules` 已按仓库 `.gitignore` 忽略，不入库）。
 

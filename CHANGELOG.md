@@ -9,6 +9,7 @@
 ### Added
 - 仓库初始化：README、.gitignore、CHANGELOG、CI 工作流（由接管系统创建）
 - 收录两个抖音分析 Skill：douyin-benchmark-analysis（对标分析）、douyin-topic-stats（选题清单与统计）
+- 收录第 3 个 Skill：douyin-video-analysis（抖音单视频全方位逆向分析，V0.2 Spec，输出单文件 HTML 报告）
 - 建立分支规范（main / feature/* / fix/* / refactor/* / chore/*）
 - 建立 Conventional Commits 与 PR 规范
 
