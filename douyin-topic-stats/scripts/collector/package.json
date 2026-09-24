@@ -1,0 +1,14 @@
+{
+  "name": "douyin-collector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "抖音公开数据采集器 MVP V0.1 - 只采普通访客/已登录用户公开可见信息",
+  "main": "collector.js",
+  "scripts": {
+    "login": "node collector.js --login",
+    "collect": "node collector.js"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

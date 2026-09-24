@@ -8,6 +8,15 @@ AI Agent 能力模块（Skill）集合仓库。
 
 集中存放可复用的 AI Agent Skill：每个 Skill 一个独立目录，包含 `SKILL.md`（能力说明）及配套脚本、模板、资源。
 
+## 已收录 Skills
+
+| 目录 | Skill | 用途 |
+|------|-------|------|
+| `douyin-benchmark-analysis/` | 抖音对标账号采集与对标分析 | 采集对标账号公开展示信息 + 六节对标报告 + 可迁移选题清单（含评论区洞察） |
+| `douyin-topic-stats/` | 抖音选题清单与数据统计 | 快速盘点账号最近 N 条视频选题 + 四项互动数据，产出可排序 HTML（不采评论） |
+
+> 每个 Skill 目录相互独立、自包含。首次使用前请按各自 `SKILL.md` 的「环境准备」运行 `node scripts/check-env.js` 自动装依赖（playwright 等，`node_modules` 已按仓库 `.gitignore` 忽略，不入库）。
+
 ## 目录结构
 
 ```

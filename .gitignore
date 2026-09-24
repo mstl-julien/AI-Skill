@@ -35,3 +35,6 @@ credentials.json
 *.log
 .cache/
 .tmp/
+
+# Packaged skill archives (build artifacts, do not commit)
+*.zip
