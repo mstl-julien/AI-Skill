@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  structure-check:
+    name: Structure & Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Required files present
+        run: |
+          test -f README.md || (echo "README.md missing" && exit 1)
+          test -f .gitignore || (echo ".gitignore missing" && exit 1)
+          test -f CHANGELOG.md || (echo "CHANGELOG.md missing" && exit 1)
+          echo "Required files OK"
+
+      - name: Validate workflow YAML
+        run: |
+          shopt -s nullglob
+          files=(.github/workflows/*.yml .github/workflows/*.yaml)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No workflow files to lint"
+            exit 0
+          fi
+          for f in "${files[@]}"; do
+            python3 -c "import yaml,sys; yaml.safe_load(open('$f'))" && echo "OK: $f" || exit 1
+          done

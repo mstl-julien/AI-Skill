@@ -1,0 +1,37 @@
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env / Secrets（严禁提交）
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+*.token
+
+# Misc
+*.log
+.cache/
+.tmp/
