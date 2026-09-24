@@ -22,7 +22,7 @@ AI Agent 能力模块（Skill）集合仓库。
 
 本仓库以**源码目录**形式提供各 Skill：克隆仓库后，将对应 `<skill-name>/` 目录整体拷贝到 Agent 的 skills 目录即可使用。每个 Skill 目录相互独立、自包含，首次使用按各自 `SKILL.md` 的「环境准备」运行 `node scripts/check-env.js` 自动装依赖（`node_modules` 按仓库 `.gitignore` 忽略，不入库）。
 
-> 注：仓库不再提供预打包的 `.zip` 整包，按需取用源码目录即可。
+> 注：仓库不再内置预打包的 `.zip` 整包，按需取用源码目录即可。需要免克隆的预打包整包（部分含 `node_modules` 开箱即用），见 GitHub Release：[v1.0.0](https://github.com/mstl-julien/AI-Skill/releases/tag/v1.0.0)。
 
 ## 目录结构
 

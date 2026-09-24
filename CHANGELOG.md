@@ -15,3 +15,4 @@
 
 ### Changed
 - 移除仓库根目录的两个预打包压缩包（douyin-benchmark-analysis.zip / douyin-topic-stats.zip）；Skills 改为以源码目录形式提供，克隆仓库后取用对应 `<skill-name>/` 目录即可（不再维护 `.zip` 整包）
+- 发布 GitHub Release [v1.0.0](https://github.com/mstl-julien/AI-Skill/releases/tag/v1.0.0)：三个 Skill 的打包 zip（douyin-benchmark-analysis / douyin-topic-stats 含 node_modules 开箱即用，douyin-video-analysis 源码态）作为免克隆下载入口；README 增加 Release 下载指引
