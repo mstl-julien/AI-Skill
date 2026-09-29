@@ -15,6 +15,7 @@ AI Agent 能力模块（Skill）集合仓库。
 | `douyin-benchmark-analysis/` | 抖音对标账号采集与对标分析 | 采集对标账号公开展示信息 + 六节对标报告 + 可迁移选题清单（含评论区洞察） |
 | `douyin-topic-stats/` | 抖音选题清单与数据统计 | 快速盘点账号最近 N 条视频选题 + 四项互动数据，产出可排序 HTML（不采评论） |
 | `douyin-video-analysis/` | 抖音单视频全方位逆向分析 | 输入一条视频 URL，登录采集→10FPS 抽帧→语音/字幕/OCR→全量评论→机制分析，输出单文件 HTML 报告 |
+| `visual-prompt-engineer/` | AI 视觉提示词专家 | 将自然语言/参考图转化为结构化文生图 Prompt，支持文生图（Mode A）/仿图（Mode B）/反推（Mode C）三种模式，面向自媒体、电商与视觉创作者 |
 
 > 每个 Skill 目录相互独立、自包含。首次使用前请按各自 `SKILL.md` 的「环境准备」运行 `node scripts/check-env.js` 自动装依赖（playwright 等，`node_modules` 已按仓库 `.gitignore` 忽略，不入库）。
 
@@ -22,7 +23,7 @@ AI Agent 能力模块（Skill）集合仓库。
 
 本仓库以**源码目录**形式提供各 Skill：克隆仓库后，将对应 `<skill-name>/` 目录整体拷贝到 Agent 的 skills 目录即可使用。每个 Skill 目录相互独立、自包含，首次使用按各自 `SKILL.md` 的「环境准备」运行 `node scripts/check-env.js` 自动装依赖（`node_modules` 按仓库 `.gitignore` 忽略，不入库）。
 
-> 注：仓库不再内置预打包的 `.zip` 整包，按需取用源码目录即可。需要免克隆的预打包整包（部分含 `node_modules` 开箱即用），见 GitHub Release：[v1.0.0](https://github.com/mstl-julien/AI-Skill/releases/tag/v1.0.0)。
+> 注：仓库不再内置预打包的 `.zip` 整包，按需取用源码目录即可。需要免克隆的预打包整包（部分含 `node_modules` 开箱即用），见 GitHub Release：[v1.1.0](https://github.com/mstl-julien/AI-Skill/releases/tag/v1.1.0)。
 
 ## 目录结构
 

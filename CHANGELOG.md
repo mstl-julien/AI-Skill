@@ -4,6 +4,14 @@
 
 分类：Added / Changed / Fixed / Improved / Breaking Changes
 
+## [v1.1.0]
+
+### Added
+- 收录第 4 个 Skill：visual-prompt-engineer（AI 视觉提示词专家，文生图 Mode A / 仿图 Mode B / 反推 Mode C 三种模式）
+
+### Changed
+- 发布 GitHub Release [v1.1.0](https://github.com/mstl-julien/AI-Skill/releases/tag/v1.1.0)：四个 Skill 的打包 zip（douyin-benchmark-analysis / douyin-topic-stats 含 node_modules 开箱即用，douyin-video-analysis / visual-prompt-engineer 源码态）作为免克隆下载入口；README 增加 visual-prompt-engineer 收录并指向 v1.1.0
+
 ## [Unreleased]
 
 ### Added
